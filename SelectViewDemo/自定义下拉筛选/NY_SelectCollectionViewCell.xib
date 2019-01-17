@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="NY_SelectCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="241" height="61"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="241" height="61"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rJT-Oj-obf">
+                        <rect key="frame" x="0.0" y="60.5" width="241" height="0.5"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="vQe-Zb-HkR"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKE-km-7pC">
+                        <rect key="frame" x="0.0" y="0.0" width="241" height="60.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="全部(12)">
+                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="wKE-km-7pC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="OhN-mK-fEW"/>
+                <constraint firstItem="wKE-km-7pC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="SPB-XO-Hex"/>
+                <constraint firstAttribute="trailing" secondItem="rJT-Oj-obf" secondAttribute="trailing" id="Vdo-wf-Rki"/>
+                <constraint firstAttribute="trailing" secondItem="wKE-km-7pC" secondAttribute="trailing" id="a5T-3V-A3B"/>
+                <constraint firstItem="rJT-Oj-obf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="deI-0s-51B"/>
+                <constraint firstItem="rJT-Oj-obf" firstAttribute="top" secondItem="wKE-km-7pC" secondAttribute="bottom" id="nuW-ol-QPw"/>
+                <constraint firstAttribute="bottom" secondItem="rJT-Oj-obf" secondAttribute="bottom" id="ynw-y1-EWY"/>
+            </constraints>
+            <size key="customSize" width="241" height="61"/>
+            <connections>
+                <outlet property="Btn" destination="wKE-km-7pC" id="Noj-jg-4Ic"/>
+            </connections>
+            <point key="canvasLocation" x="129.5" y="59.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
